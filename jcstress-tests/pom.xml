@@ -27,7 +27,7 @@
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
         <sonar.skip>true</sonar.skip>
-        <jcstress.version>0.4</jcstress.version>
+        <jcstress.version>0.15</jcstress.version>
     </properties>
 
     <dependencies>
@@ -52,7 +52,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.2</version>
+                <version>3.2.4</version>
                 <configuration>
                     <finalName>jcstress</finalName>
                     <transformers>
