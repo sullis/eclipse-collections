@@ -122,7 +122,7 @@
         <scala.version>2.12.15</scala.version>
         <guava.version>31.0.1-jre</guava.version>
         <trove4j.version>3.0.3</trove4j.version>
-        <checkstyle.version>9.1</checkstyle.version>
+        <checkstyle.version>10.1</checkstyle.version>
         <checkstyle.plugin.version>3.1.2</checkstyle.plugin.version>
         <findbugs.plugin.version>3.0.5</findbugs.plugin.version>
         <jacoco.plugin.version>0.8.7</jacoco.plugin.version>
@@ -136,7 +136,7 @@
 
         <argLine></argLine>
 
-        <project.previous.version>9.2.0</project.previous.version>
+        <project.previous.version>11.0.0</project.previous.version>
     </properties>
 
     <pluginRepositories>
@@ -228,6 +228,7 @@
                             <avoidCallsTo>org.apache.commons.logging</avoidCallsTo>
                         </avoidCallsTo>
                         <maxMutationsPerClass>1</maxMutationsPerClass>
+                        <additionalClasspathElements>target/generated-sources/java/*</additionalClasspathElements>
                         <excludedClasses>
                             <param>org.eclipse.collections.impl.lazy.parallel*</param>
                             <param>org.eclipse.collections.impl.parallel*</param>
@@ -344,7 +345,7 @@
 
                 <plugin>
                     <artifactId>maven-plugin-plugin</artifactId>
-                    <version>3.6.0</version>
+                    <version>3.6.2</version>
                 </plugin>
 
                 <plugin>
@@ -359,7 +360,7 @@
 
                 <plugin>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.9.0</version>
+                    <version>3.11.0</version>
                 </plugin>
 
                 <plugin>
